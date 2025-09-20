@@ -1,0 +1,124 @@
+:root {
+  --light-blue: #8ecae6;
+  --blue-green: #219ebc;
+  --prussian-blue: #023047;
+  --honey-yellow: #ffb703;
+  --orange: #fb8500;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 28px; 
+  text-align: center; 
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  background-color: var(--light-blue);
+  justify-content: space-evenly;
+  align-items: center;   
+  padding: 1em;
+}
+
+header > h1 {
+  color: var(--prussian-blue);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  border-collapse: collapse;
+}
+
+th, td {
+  width: 25%;
+  padding: 1em;
+  border-width: 0;
+  border-collapse: collapse;
+}
+
+footer {
+  color: var(--blue-green);
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex: auto;
+}
+
+main > div {
+  flex: auto;
+}
+
+#origen, #destino {
+  color: var(--orange);
+}
+
+aside {
+  min-width: 150px;
+  flex: 1;
+  border-left: 2px solid var(--prussian-blue);
+}
+
+aside > ul > li {
+  color: var(--honey-yellow);
+  padding: 0.5em;
+}
+
+aside > ul > li > a {
+  text-decoration: none;
+}
+
+aside > ul > li > a:hover {
+  text-decoration: none; 
+  color: var(--blue-green);
+}
+
+.btn-tranformar {
+  background-color: var(--orange);
+  color: var(--prussian-blue);
+}
+
+.btn-resultado {
+  background-color: var(--blue-green);
+  color: var(--light-blue);
+  margin-left: 9px;
+}
+
+.logo {
+  height: 100px;
+  width: 390px;
+  padding: 60px;
+  margin: 1em;
+}
+
+.borde {
+  border-right: 2px solid var(--blue-green);
+  width: 40px;
+  height: 350px;
+  display: inline-block;
+  position: fixed; /* Fijo en la pantalla */
+  top: 100px; /* Distancia desde el borde superior */
+  left: 33%; /* Lo pone en el centro de la pantalla */
+  transform: translateX(-50%); /* Lo centra exactamente */
+}
